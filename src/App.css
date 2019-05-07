@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  color: white;
+}
+
+html { 
+  background-color: #2d2d2d;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 24px;
+  padding: 20px;
+  margin: 0;
+  color: white;
+}

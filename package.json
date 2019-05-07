@@ -1,0 +1,30 @@
+{
+  "name": "plex-employees",
+  "version": "0.1.0",
+  "license": "None provided",
+  "private": true,
+  "dependencies": {
+    "concurrently": "^3.6.0",
+    "cors": "^2.8.4",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.5",
+    "pg": "^7.8.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4",
+    "react-table": "^6.9.2",
+    "serve": "^10.1.2"
+  },
+  "scripts": {
+    "db-reset": "node ./db-scripts/runScript db-clean.sql db-init.sql",
+    "prod": "concurrently --kill-others \"serve -s build -l 80\" \"node server\"",
+    "start": "concurrently --kill-others \"nodemon --watch server server\" \"npm run start:react-app\"",
+    "start:react-app": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "custom:build": "nodemon src/scripts/build.js --watch src/data --ext .md",
+    "custom:start": "concurrently --kill-others \"npm run custom:build\" \"npm run start\""
+  }
+}

@@ -1,0 +1,88 @@
+.rt-wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.ReactTable {
+    min-width: 500px;
+    max-width: 1250px;
+    border: 2px solid black;
+}
+
+.rt-tr {
+    display: flex;
+}
+
+.rt-thead {
+    display: flex;
+    min-height: 30px;
+}
+
+.rt-thead .rt-th {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rt-td {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rt-tr-group .rt-tr {
+    border-bottom: 1px solid black;
+}
+
+.rt-tr-group .-padRow {
+    /* border-bottom: 10px solid black; */
+    border-bottom: none;
+}
+
+.pagination-bottom {
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.-pagination {
+    display: flex;
+    justify-content: space-around;
+    min-width: 50%;
+}
+
+.-center {
+    display: flex;
+    justify-content: space-around;
+    min-width: 250;
+}
+
+.-pageJump input{
+    width: 40px;
+}
+
+.-pageInfo {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.-pagination .-center {
+    width: 200px;
+}
+
+.rt-tbody {
+    color: black;
+}
+
+/* Input field dimensions bound to parent */
+.rt-tr input{
+    padding: 0.2em; 
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+}
